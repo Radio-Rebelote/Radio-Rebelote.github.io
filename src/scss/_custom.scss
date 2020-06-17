@@ -1,1 +1,70 @@
 
+.button-primary {
+  color: black !important;
+  border-radius: 0;
+  transition: all .5s ease-out;
+  -webkit-box-shadow: 3px 10px 21px -5px rgba(0,0,0,0.75);
+  -moz-box-shadow: 3px 10px 21px -5px rgba(0,0,0,0.75);
+  box-shadow: 3px 10px 21px -5px rgba(0,0,0,0.75);
+
+  &:hover {
+    transition: all .5s ease-in;
+    background-color: #fcd238;
+  }
+}
+
+
+.header-logo-image {
+  width: 50px;
+}
+
+.hero-media-image {
+  width: 700px;
+  -webkit-box-shadow: 3px 10px 21px -5px rgba(0,0,0,0.75);
+  -moz-box-shadow: 3px 10px 21px -5px rgba(0,0,0,0.75);
+  box-shadow: 3px 10px 21px -5px rgba(0,0,0,0.75);
+}
+
+.site-header {
+  background-image: linear-gradient(rgba(251, 192, 45, 0.5), rgba(251, 192, 45, 0.5)), url("../../dist/images/rebelote/landing.jpg");
+  background-size: cover;
+  background-position: center;
+  -webkit-box-shadow: inset 0px -10px 26px -16px rgba(0,0,0,0.75);
+  -moz-box-shadow: inset 0px -10px 26px -16px rgba(0,0,0,0.75);
+  box-shadow: inset 0px -10px 26px -16px rgba(0,0,0,0.75);
+}
+
+.hero-paragraph {
+  color: black;
+}
+
+.section-paragraph {
+  text-align: justify;
+}
+
+.partners{
+  margin: auto;
+    width: 70vw;
+    h2 {
+      text-align: center;
+    }
+    div {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+
+      .partner {
+        width: 400px;
+        padding: 50px;
+        box-sizing: border-box;
+        img {
+        height: auto;
+        width: 100%;
+        }
+      }
+    }
+}
+
+.cta::before {
+  background-image: none !important;
+}

@@ -115,6 +115,20 @@ h1 {
   }
 }
 
+@include media('<=small') {
+  h1 {
+    font-size: 65px;
+    line-height: 65px;
+  }
+
+  .hero-paragraph {
+    font-size: 1em;
+    a.button {
+      margin: 0 20px;
+    }
+  }
+}
+
 @include media('<=medium') {
   .hero-inner {
     display: flex;

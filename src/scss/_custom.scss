@@ -115,7 +115,7 @@ h1 {
   }
 }
 
-@include media('<large') {
+@include media('<=medium') {
   .hero-inner {
     display: flex;
     flex-direction: column;

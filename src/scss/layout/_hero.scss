@@ -66,7 +66,7 @@
 	}
 }
 
-@include media( '<medium' ) {
+@include media( '<=medium' ) {
 
 	.hero-cta {
 
@@ -84,7 +84,7 @@
 	}
 }
 
-@include media( '>medium' ) {
+@include media( '>=large' ) {
 
     .hero {
 		text-align: left;

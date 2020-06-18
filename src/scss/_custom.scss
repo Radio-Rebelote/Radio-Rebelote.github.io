@@ -1,4 +1,3 @@
-
 .button-primary {
   color: black !important;
   border-radius: 0;
@@ -54,8 +53,8 @@
       align-items: center;
 
       .partner {
-        width: 400px;
-        padding: 50px;
+        width: 20vw;
+        padding: 3vw;
         box-sizing: border-box;
         img {
         height: auto;
@@ -67,4 +66,87 @@
 
 .cta::before {
   background-image: none !important;
+}
+
+h1 {
+  font-size: 100px;
+  line-height: 100px;
+}
+
+@include media('>large') {
+  .container-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: none !important;
+    &>* {
+      flex: 1;
+      padding: 30px;
+      margin: 0 20px;
+    }
+    margin-bottom: 7vw;
+  }
+}
+
+.container {
+  max-width: 1440px;
+}
+
+.hero>.container {
+  max-width: 1200px;
+}
+
+.hero-paragraph {
+  font-size: 1.4em;
+}
+
+@include media('>medium') {
+  .hero-inner {
+    padding: 0 15vw;
+    .hero-media {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+}
+
+@include media('<large') {
+  .hero-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    .hero-media {
+      padding: 60px;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@include media('<medium') {
+  .hero-media {
+    padding: 10px !important;
+  }
+}
+
+@include media('<large') {
+  .partners>div {
+    flex-wrap: wrap;
+  }
+
+  .partner {
+    padding: 0;
+    width: 200px !important;
+  }
+}
+
+.text-center {
+  text-align: center;
 }

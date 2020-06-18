@@ -115,10 +115,11 @@ h1 {
   }
 }
 
-@include media('<=small') {
+@include media('<small') {
   h1 {
     font-size: 65px;
     line-height: 65px;
+    //
   }
 
   .hero-paragraph {

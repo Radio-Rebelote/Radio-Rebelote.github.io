@@ -5,10 +5,11 @@
   -webkit-box-shadow: 3px 10px 21px -5px rgba(0,0,0,0.75);
   -moz-box-shadow: 3px 10px 21px -5px rgba(0,0,0,0.75);
   box-shadow: 3px 10px 21px -5px rgba(0,0,0,0.75);
+  background-color: #f4c924;
 
   &:hover {
     transition: all .5s ease-in;
-    background-color: #fcd238;
+    background-color: rgb(252, 225, 116);
   }
 }
 
@@ -22,15 +23,19 @@
   -webkit-box-shadow: 3px 10px 21px -5px rgba(0,0,0,0.75);
   -moz-box-shadow: 3px 10px 21px -5px rgba(0,0,0,0.75);
   box-shadow: 3px 10px 21px -5px rgba(0,0,0,0.75);
+  position: absolute;
+  left: 10vw;
+  background-color: white;
 }
 
 .site-header {
-  background-image: linear-gradient(rgba(251, 192, 45, 0.5), rgba(251, 192, 45, 0.5)), url("../../dist/images/rebelote/landing.jpg");
+  background-image: linear-gradient(to left, rgba(250, 202, 27, 0.3), rgba(250, 202, 27, 1)), url("../../dist/images/rebelote/landing.jpg");
   background-size: cover;
   background-position: center;
   -webkit-box-shadow: inset 0px -10px 26px -16px rgba(0,0,0,0.75);
   -moz-box-shadow: inset 0px -10px 26px -16px rgba(0,0,0,0.75);
   box-shadow: inset 0px -10px 26px -16px rgba(0,0,0,0.75);
+  height: 90vh;
 }
 
 .hero-paragraph {
@@ -92,8 +97,11 @@ h1 {
   max-width: 1440px;
 }
 
-.hero>.container {
-  max-width: 1200px;
+.hero {
+  padding-top: 50px;
+  .container {
+    max-width: 1200px;
+  }
 }
 
 .hero-paragraph {
@@ -102,7 +110,7 @@ h1 {
 
 @include media('>medium') {
   .hero-inner {
-    padding: 0 15vw;
+    padding: 0 13vw;
     .hero-media {
       display: flex;
       justify-content: center;
@@ -164,4 +172,29 @@ h1 {
 
 .text-center {
   text-align: center;
+}
+
+
+.hero-copy {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+
+	border-radius: 4px;
+	padding: 36px !important;
+	box-sizing: border-box;
+  max-width: 600px;
+  .hero-image {
+    margin-bottom: 24px;
+  }
+  p {
+    text-align: center;
+  }
+  .button-primary {
+    background-color: white;
+    &:hover {
+      background-color: rgb(230, 230, 230);
+    }
+  }
 }

@@ -35,7 +35,7 @@
   -webkit-box-shadow: inset 0px -10px 26px -16px rgba(0,0,0,0.75);
   -moz-box-shadow: inset 0px -10px 26px -16px rgba(0,0,0,0.75);
   box-shadow: inset 0px -10px 26px -16px rgba(0,0,0,0.75);
-  height: 90vh;
+  height: 90%;
 }
 
 .hero-paragraph {
@@ -208,4 +208,12 @@ h1 {
 .site-header .footer-social-links svg path {
   color: #ab5237;
   fill: #ab5237;
+}
+
+.features .section-inner {
+	padding-bottom: 0;
+}
+
+#occitanie img:nth-child(2) {
+	width: 350px;
 }
